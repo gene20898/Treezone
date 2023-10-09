@@ -2,10 +2,16 @@
 import Card from "../shared/Card.astro";
 ---
 
-<div class="flex flex-wrap justify-start px-24 py-10">
-  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => 
-  <div class="basis-1/4 px-4 my-10">
+<div class="flex flex-wrap justify-start px-4 pb-10">
+  {[1, 2, 3, 4].map((i) => 
+  <div class="basis-1/4 my-10">
   <Card />
 </div>
   )}
+
+  <div class="mx-auto">
+    <button class="uppercase font-normal text-neutral-600  border-neutral-500 border px-4 py-2 hover:bg-lime-700 hover:text-white">
+      See more
+    </button>
+  </div>
 </div>
